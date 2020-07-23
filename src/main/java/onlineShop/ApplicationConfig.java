@@ -28,7 +28,9 @@ public class ApplicationConfig {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		//need to replace your own database
+		//this is the end-point of the database
 		dataSource.setUrl("jdbc:mysql://REPLACE-HERE:3306/ecommerce?serverTimezone=UTC");
+		//this is the username and password
 		dataSource.setUsername("REPLACE-HERE");
 		dataSource.setPassword("REPLACE-HERE");
 
